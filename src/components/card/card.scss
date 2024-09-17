@@ -1,0 +1,57 @@
+.card{
+  background: #71797e;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 0 3px white;
+  border: 1px dashed white;
+
+  .head{
+    display: flex;
+    justify-content: space-between;
+
+    .letter{
+      display: grid;
+      place-items: center;
+      background: rebeccapurple;
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      font-size: 30px;
+      text-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
+    }
+
+    .info{
+      flex: 1;
+      margin-left: 40px;
+      font-size: 19px;
+
+      p:last-child{
+        font-weight: bold;
+      }
+    }
+
+  }
+
+  .body{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 30px;
+    column-gap: 10px;
+    margin-top: 20px;
+
+    .field{
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .status{
+      display: flex;
+
+      p{
+        padding: 5px 12px;
+        border-radius: 10px;
+      }
+    }
+  }
+}
