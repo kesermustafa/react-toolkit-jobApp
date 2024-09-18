@@ -3,3 +3,6 @@ export const statusOpt = [
 ];
 
 export const typeOpt = ["Yarı Zamanlı", "Tam Zamanlı", "Uzaktan", "Staj" ];
+
+export const sortOpt = ['a-z', 'z-a', 'En Yeni', 'En Eski'];
+

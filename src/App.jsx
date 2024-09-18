@@ -16,7 +16,12 @@ const App = () => {
     useEffect(() => {
         dispatch(setLoading(true));
 
-        api.get("/jobs")
+        const params ={
+            _sort: "date",
+            _order: "desc"
+        }
+
+        api.get("/jobs", {params})
             .then((res) => {dispatch(setJobs(res.data))})
             .catch((err) => {dispatch(setError(err.message))})
     }, []);

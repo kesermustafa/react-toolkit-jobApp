@@ -19,7 +19,7 @@ const Card = ({job}) => {
         <div className="card">
             <section className='head'>
                 <div className='letter'>
-                    <span>A</span>
+                    <span>{job.company.slice(0,1)}</span>
                 </div>
 
                 <div className='info'>
